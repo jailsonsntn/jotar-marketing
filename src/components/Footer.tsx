@@ -43,11 +43,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-marketing-orange rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">DM</span>
-              </div>
-              <span className="text-xl font-bold">Digital Marketing</span>
+            <div className="flex items-center mb-6">
+              <img 
+                src="/lovable-uploads/afc8e4c9-8c5e-4f3f-ac82-553b02a37d51.png" 
+                alt="Jota R Marketing" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Transformamos negócios através do marketing digital. Mais de 5 anos gerando resultados 
@@ -73,7 +74,7 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="space-y-2 text-sm text-gray-300">
-              <p>📧 contato@digitalmarketing.com.br</p>
+              <p>📧 contato@jotarmarketing.com.br</p>
               <p>📱 (11) 99999-9999</p>
               <p>📍 São Paulo, SP - Brasil</p>
             </div>
@@ -173,7 +174,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <p>
-              © {currentYear} Digital Marketing. Todos os direitos reservados.
+              © {currentYear} Jota R Marketing. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-marketing-orange transition-colors duration-300">

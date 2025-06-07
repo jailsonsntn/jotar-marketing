@@ -18,11 +18,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-marketing-orange rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">DM</span>
-            </div>
-            <span className="text-xl font-bold text-marketing-green">Digital Marketing</span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/2dcc7432-8798-4ae1-b564-16c9f42cc0d1.png" 
+              alt="Jota R Marketing" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
