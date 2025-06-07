@@ -1,3 +1,4 @@
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -74,7 +75,7 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="space-y-2 text-sm text-gray-300">
               <p>📧 contato@jotarmarketing.com.br</p>
-              <p>📱 +1 (398) 599-4965</p>
+              <p>📱 +55 (13) 98599-4965</p>
               <p>📍 São Paulo, SP - Brasil</p>
             </div>
           </div>
@@ -193,7 +194,7 @@ const Footer = () => {
       {/* WhatsApp Float Button */}
       <button 
         className="fixed bottom-6 right-6 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl transition-all duration-300 transform hover:scale-110 z-50 animate-bounce"
-        onClick={() => window.open('https://wa.me/+13985994965?text=Olá! Vim através do site e gostaria de falar sobre marketing digital.', '_blank')}
+        onClick={() => window.open('https://wa.me/+5513985994965?text=Olá! Vim através do site e gostaria de falar sobre marketing digital.', '_blank')}
         style={{ animationDuration: '2s' }}
       >
         💬

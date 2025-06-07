@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -61,8 +62,8 @@ const ContactSection = () => {
     {
       icon: "📱",
       title: "WhatsApp",
-      info: "+1 (398) 599-4965",
-      action: "https://wa.me/+13985994965"
+      info: "+55 (13) 98599-4965",
+      action: "https://wa.me/+5513985994965"
     },
     {
       icon: "📍",
@@ -228,7 +229,7 @@ const ContactSection = () => {
               </p>
               <Button 
                 className="bg-white text-marketing-green px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open('https://wa.me/+13985994965?text=Olá! Vim através do site e gostaria de falar com um especialista.', '_blank')}
+                onClick={() => window.open('https://wa.me/+5513985994965?text=Olá! Vim através do site e gostaria de falar com um especialista.', '_blank')}
               >
                 Falar com Especialista
               </Button>

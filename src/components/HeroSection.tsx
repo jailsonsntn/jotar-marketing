@@ -1,7 +1,9 @@
 
 import { Button } from '@/components/ui/button';
+
 const HeroSection = () => {
-  return <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center">
+  return (
+    <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -16,7 +18,7 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-marketing-orange hover:bg-marketing-orange/90 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg" onClick={() => window.open('https://wa.me/+13985994965?text=Olá! Quero solicitar uma cotação para melhorar meu marketing digital.', '_blank')}>
+              <Button size="lg" className="bg-marketing-orange hover:bg-marketing-orange/90 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg" onClick={() => window.open('https://wa.me/+5513985994965?text=Olá! Quero solicitar uma cotação para melhorar meu marketing digital.', '_blank')}>
                 Solicite uma Cotação no WhatsApp
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-marketing-green text-marketing-green hover:bg-marketing-green hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300" onClick={() => document.getElementById('servicos')?.scrollIntoView({
@@ -70,6 +72,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
