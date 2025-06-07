@@ -52,7 +52,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               className="bg-marketing-orange hover:bg-marketing-orange/90 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar uma cotação para serviços de marketing digital.', '_blank')}
+              onClick={() => window.open('https://wa.me/+13985994965?text=Olá! Gostaria de solicitar uma cotação para serviços de marketing digital.', '_blank')}
             >
               Fale Conosco
             </Button>
@@ -95,7 +95,7 @@ const Header = () => {
               </button>
               <Button 
                 className="bg-marketing-orange hover:bg-marketing-orange/90 text-white px-6 py-2 rounded-lg w-full mt-4"
-                onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar uma cotação para serviços de marketing digital.', '_blank')}
+                onClick={() => window.open('https://wa.me/+13985994965?text=Olá! Gostaria de solicitar uma cotação para serviços de marketing digital.', '_blank')}
               >
                 Fale Conosco
               </Button>
