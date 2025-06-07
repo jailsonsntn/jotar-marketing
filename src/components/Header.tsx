@@ -41,18 +41,6 @@ const Header = () => {
               Serviços
             </button>
             <button
-              onClick={() => scrollToSection('portfolio')}
-              className="text-gray-700 hover:text-marketing-orange transition-colors duration-300"
-            >
-              Portfólio
-            </button>
-            <button
-              onClick={() => scrollToSection('depoimentos')}
-              className="text-gray-700 hover:text-marketing-orange transition-colors duration-300"
-            >
-              Depoimentos
-            </button>
-            <button
               onClick={() => scrollToSection('contato')}
               className="text-gray-700 hover:text-marketing-orange transition-colors duration-300"
             >
@@ -98,18 +86,6 @@ const Header = () => {
                 className="text-left text-gray-700 hover:text-marketing-orange transition-colors duration-300"
               >
                 Serviços
-              </button>
-              <button
-                onClick={() => scrollToSection('portfolio')}
-                className="text-left text-gray-700 hover:text-marketing-orange transition-colors duration-300"
-              >
-                Portfólio
-              </button>
-              <button
-                onClick={() => scrollToSection('depoimentos')}
-                className="text-left text-gray-700 hover:text-marketing-orange transition-colors duration-300"
-              >
-                Depoimentos
               </button>
               <button
                 onClick={() => scrollToSection('contato')}
