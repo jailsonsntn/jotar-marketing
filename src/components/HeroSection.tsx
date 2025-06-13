@@ -1,9 +1,6 @@
-
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
-  return (
-    <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center">
+  return <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -12,10 +9,7 @@ const HeroSection = () => {
               Aumente suas vendas online em 
               <span className="text-marketing-orange"> 30 dias</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Estratégias comprovadas de marketing digital que já ajudaram centenas de empresas 
-              a multiplicar seus resultados. Pare de perder tempo com táticas que não funcionam.
-            </p>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">Na Jota R Marketing, somos especialistas em tráfego pago, redes sociais e estratégias que geram resultado de verdade. Se você está cansado de postar sem retorno ou investir sem saber onde está errando, aqui é o lugar certo.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-marketing-orange hover:bg-marketing-orange/90 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg" onClick={() => window.open('https://wa.me/+5513985994965?text=Quero aumentar minhas vendas! Como posso começar?', '_blank')}>
@@ -72,8 +66,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
