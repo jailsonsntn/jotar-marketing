@@ -35,7 +35,7 @@ Chega de investir sem ver resultado.</p>
                 <div className="text-sm text-gray-600">Em Vendas Geradas</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-marketing-orange">300+</div>
+                <div className="text-2xl font-bold text-marketing-orange">50+</div>
                 <div className="text-sm text-gray-600">Clientes Atendidos</div>
               </div>
             </div>
