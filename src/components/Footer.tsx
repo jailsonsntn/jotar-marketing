@@ -58,17 +58,20 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4 mb-6">
               {[
-                { name: 'Instagram', icon: '📷', color: 'hover:bg-pink-500' },
-                { name: 'LinkedIn', icon: '💼', color: 'hover:bg-blue-600' },
-                { name: 'Facebook', icon: '👥', color: 'hover:bg-blue-500' },
-                { name: 'YouTube', icon: '📺', color: 'hover:bg-red-500' }
+                { name: 'Instagram', icon: '📷', color: 'hover:bg-pink-500', url: 'https://www.instagram.com/jotar.marketing/' },
+                { name: 'LinkedIn', icon: '💼', color: 'hover:bg-blue-600', url: '#' },
+                { name: 'Facebook', icon: '👥', color: 'hover:bg-blue-500', url: 'https://www.facebook.com/jotarmkt/' },
+                { name: 'YouTube', icon: '📺', color: 'hover:bg-red-500', url: '#' }
               ].map((social, index) => (
-                <button
+                <a
                   key={index}
+                  href={social.url}
+                  target={social.url !== '#' ? '_blank' : '_self'}
+                  rel={social.url !== '#' ? 'noopener noreferrer' : ''}
                   className={`w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white ${social.color} transition-all duration-300 transform hover:scale-110`}
                 >
                   {social.icon}
-                </button>
+                </a>
               ))}
             </div>
 
