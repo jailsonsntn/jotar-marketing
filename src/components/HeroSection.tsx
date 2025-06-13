@@ -31,8 +31,8 @@ Chega de investir sem ver resultado.</p>
                 <div className="text-sm text-gray-600">Crescimento Médio</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-marketing-orange">R$ 10M+</div>
-                <div className="text-sm text-gray-600">Em Vendas Geradas</div>
+                <div className="text-2xl font-bold text-marketing-orange">R$ 5K+</div>
+                <div className="text-sm text-gray-600">Em Tráfego Investido</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-marketing-orange">50+</div>
