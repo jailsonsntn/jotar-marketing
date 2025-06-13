@@ -5,40 +5,40 @@ import { Button } from '@/components/ui/button';
 const ServicesSection = () => {
   const services = [
     {
-      title: "Tráfego Pago Que Converte",
-      description: "Campanhas que geram lucro desde o primeiro dia. Pare de queimar dinheiro em anúncios que não vendem e comece a faturar com estratégias comprovadas.",
+      title: "Tráfego Pago Estratégico",
+      description: "Campanhas no Google e Facebook que geram leads qualificados. Investimento otimizado para máximo retorno e vendas consistentes.",
       icon: "🎯",
-      features: ["ROI Garantido de 3:1", "Leads Qualificados Diários", "Campanhas Lucrativas", "Suporte 24/7"]
+      features: ["ROI Positivo", "Leads Qualificados", "Otimização Contínua", "Relatórios Detalhados"]
     },
     {
-      title: "Social Media Que Vende",
-      description: "Transforme suas redes sociais em máquinas de vendas automáticas. Conteúdo estratégico que converte seguidores em clientes pagantes.",
+      title: "Gestão de Redes Sociais",
+      description: "Presença profissional nas redes sociais com conteúdo que engaja e converte. Transforme seguidores em clientes reais.",
       icon: "📱",
-      features: ["Conteúdo Viral", "Engajamento Real", "Vendas Diretas", "Crescimento Orgânico"]
+      features: ["Conteúdo Estratégico", "Engajamento Real", "Crescimento Orgânico", "Conversões Diretas"]
     },
     {
-      title: "Criativos Irresistíveis",
-      description: "Designs que hipnotizam e vendem. Criatividade estratégica que faz seus clientes clicarem, comprarem e recomendarem.",
+      title: "Design e Criativos",
+      description: "Materiais visuais profissionais que chamam atenção e comunicam sua mensagem de forma clara e impactante.",
       icon: "🎨",
-      features: ["Design Persuasivo", "Alta Conversão", "Identidade Marcante", "Impacto Visual"]
+      features: ["Design Profissional", "Identidade Visual", "Materiais de Vendas", "Alta Qualidade"]
     },
     {
-      title: "Landing Pages Que Convertem",
-      description: "Páginas de vendas com taxa de conversão acima de 15%. Cada elemento otimizado para transformar visitantes em compradores.",
+      title: "Sites e Landing Pages",
+      description: "Páginas otimizadas para conversão que transformam visitantes em clientes. Design responsivo e carregamento rápido.",
       icon: "💻",
-      features: ["Conversão +15%", "Mobile Otimizado", "Carregamento Rápido", "Psicologia da Venda"]
+      features: ["Alta Conversão", "Design Responsivo", "Carregamento Rápido", "SEO Otimizado"]
     },
     {
-      title: "Consultoria Estratégica Exclusiva",
-      description: "Acesso direto ao nosso time de especialistas. Estratégias personalizadas que multiplicam seu faturamento em tempo recorde.",
+      title: "Consultoria em Marketing",
+      description: "Análise completa do seu negócio e estratégia personalizada para acelerar seus resultados de forma sustentável.",
       icon: "📊",
-      features: ["Plano Personalizado", "Mentoria VIP", "Resultados Rápidos", "Acompanhamento Total"]
+      features: ["Estratégia Personalizada", "Análise Completa", "Acompanhamento", "Resultados Medidos"]
     },
     {
-      title: "SEO Que Domina o Google",
-      description: "Posicionamento no topo do Google em 90 dias. Milhares de clientes te encontrando organicamente todos os meses.",
+      title: "SEO e Conteúdo",
+      description: "Posicionamento no Google através de conteúdo relevante e otimização técnica. Mais visibilidade e tráfego orgânico.",
       icon: "🔍",
-      features: ["Top 3 Garantido", "Tráfego Orgânico", "Autoridade Digital", "Leads Gratuitos"]
+      features: ["Posicionamento Google", "Tráfego Orgânico", "Conteúdo Relevante", "Autoridade Digital"]
     }
   ];
 
@@ -47,11 +47,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-marketing-green mb-6">
-            Como Multiplicamos Seu Faturamento
+            Como Ajudamos Seu Negócio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Métodos comprovados que já geraram milhões em vendas para empresas como a sua. 
-            <strong className="text-marketing-orange"> Resultados garantidos ou seu dinheiro de volta.</strong>
+            Soluções completas de marketing digital para empresas que querem crescer de forma consistente e sustentável.
           </p>
         </div>
 
@@ -84,9 +83,9 @@ const ServicesSection = () => {
                 </ul>
                 <Button 
                   className="w-full bg-marketing-green hover:bg-marketing-green/90 text-white transition-all duration-300"
-                  onClick={() => window.open('https://wa.me/+5513985994965?text=Quero saber mais sobre ' + service.title + ' e como posso começar hoje!', '_blank')}
+                  onClick={() => window.open('https://wa.me/+5513985994965?text=Quero saber mais sobre ' + service.title + ' para meu negócio', '_blank')}
                 >
-                  💬 Quero Começar Agora
+                  💬 Saber Mais
                 </Button>
               </CardContent>
             </Card>
@@ -99,24 +98,24 @@ const ServicesSection = () => {
             <div className="w-16 h-16 bg-marketing-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-white text-2xl">⭐</span>
             </div>
-            <h3 className="text-xl font-bold text-marketing-green mb-2">Resultados Comprovados</h3>
-            <p className="text-gray-600">Mais de R$ 50 milhões gerados para nossos clientes em 5 anos</p>
+            <h3 className="text-xl font-bold text-marketing-green mb-2">Experiência Comprovada</h3>
+            <p className="text-gray-600">Mais de 5 anos ajudando empresas a crescerem online</p>
           </div>
           
           <div className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="w-16 h-16 bg-marketing-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-white text-2xl">🚀</span>
             </div>
-            <h3 className="text-xl font-bold text-marketing-green mb-2">Crescimento Acelerado</h3>
-            <p className="text-gray-600">Aumento médio de 300% no faturamento em 90 dias</p>
+            <h3 className="text-xl font-bold text-marketing-green mb-2">Resultados Consistentes</h3>
+            <p className="text-gray-600">Estratégias testadas que realmente funcionam</p>
           </div>
           
           <div className="text-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <div className="w-16 h-16 bg-marketing-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-white text-2xl">🛡️</span>
             </div>
-            <h3 className="text-xl font-bold text-marketing-green mb-2">Garantia Total</h3>
-            <p className="text-gray-600">30 dias de garantia ou devolvemos 100% do seu investimento</p>
+            <h3 className="text-xl font-bold text-marketing-green mb-2">Suporte Completo</h3>
+            <p className="text-gray-600">Acompanhamento próximo durante todo o processo</p>
           </div>
         </div>
       </div>
