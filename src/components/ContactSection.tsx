@@ -29,8 +29,8 @@ const ContactSection = () => {
     // Validation
     if (!formData.name || !formData.email || !formData.whatsapp || !formData.interest) {
       toast({
-        title: "Erro no formulário",
-        description: "Por favor, preencha todos os campos obrigatórios.",
+        title: "Ops! Faltam alguns dados",
+        description: "Preencha todos os campos para receber sua proposta personalizada.",
         variant: "destructive",
       });
       return;
@@ -38,8 +38,8 @@ const ContactSection = () => {
 
     // Simulate form submission
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve. Obrigado!",
+      title: "🚀 Proposta enviada com sucesso!",
+      description: "Nossa equipe entrará em contato em até 30 minutos. Prepare-se para decolar!",
     });
 
     // Reset form
@@ -55,26 +55,26 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: "📧",
-      title: "E-mail",
+      title: "E-mail VIP",
       info: "contato@digitalmarketing.com.br",
       action: "mailto:contato@digitalmarketing.com.br"
     },
     {
-      icon: "📱",
-      title: "WhatsApp",
+      icon: "💬",
+      title: "WhatsApp Direto",
       info: "+55 (13) 98599-4965",
       action: "https://wa.me/+5513985994965"
     },
     {
-      icon: "📍",
-      title: "Localização",
+      icon: "🌎",
+      title: "Atendimento Global",
       info: "São Paulo, SP - Brasil",
       action: "#"
     },
     {
-      icon: "⏰",
-      title: "Horário",
-      info: "Seg à Sex: 9h às 18h",
+      icon: "⚡",
+      title: "Resposta Rápida",
+      info: "Atendimento em 30min",
       action: "#"
     }
   ];
@@ -84,33 +84,37 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-marketing-green mb-6">
-            Entre em Contato
+            Pronto Para Multiplicar Suas Vendas?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Pronto para transformar seu negócio? Vamos conversar e criar uma estratégia personalizada para você
+            <strong className="text-marketing-orange">ÚLTIMAS 24 VAGAS DISPONÍVEIS!</strong> Solicite sua análise gratuita agora e descubra 
+            como aumentar seu faturamento em até 300% nos próximos 90 dias.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="animate-slide-up shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl text-marketing-green text-center">
-                Solicite uma Proposta
+          <Card className="animate-slide-up shadow-xl border-2 border-marketing-orange/20">
+            <CardHeader className="bg-gradient-to-r from-marketing-green to-marketing-orange text-white rounded-t-lg">
+              <CardTitle className="text-2xl text-center">
+                🎯 Análise Gratuita de R$ 2.500
               </CardTitle>
+              <p className="text-center text-sm opacity-90">
+                Descubra exatamente como multiplicar suas vendas
+              </p>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nome Completo *
+                    Seu Nome Completo *
                   </label>
                   <Input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Seu nome completo"
+                    placeholder="Como devemos te chamar?"
                     className="w-full"
                     required
                   />
@@ -118,14 +122,14 @@ const ContactSection = () => {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    E-mail *
+                    Seu Melhor E-mail *
                   </label>
                   <Input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="seu@email.com"
+                    placeholder="Onde te enviamos o diagnóstico?"
                     className="w-full"
                     required
                   />
@@ -133,7 +137,7 @@ const ContactSection = () => {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    WhatsApp *
+                    WhatsApp para Contato Direto *
                   </label>
                   <Input
                     type="tel"
@@ -148,7 +152,7 @@ const ContactSection = () => {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Interesse *
+                    Qual Seu Maior Desafio? *
                   </label>
                   <select
                     name="interest"
@@ -157,45 +161,49 @@ const ContactSection = () => {
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-marketing-orange focus:border-transparent"
                     required
                   >
-                    <option value="">Selecione um serviço</option>
-                    <option value="trafego-pago">Tráfego Pago</option>
-                    <option value="social-media">Social Media</option>
-                    <option value="criativos">Criativos</option>
-                    <option value="landing-pages">Landing Pages</option>
-                    <option value="consultoria">Consultoria Estratégica</option>
-                    <option value="seo">SEO & Conteúdo</option>
-                    <option value="todos">Todos os Serviços</option>
+                    <option value="">Selecione sua prioridade</option>
+                    <option value="trafego-pago">🎯 Gerar Leads Qualificados</option>
+                    <option value="social-media">📱 Vender Pelas Redes Sociais</option>
+                    <option value="criativos">🎨 Criar Anúncios Que Convertem</option>
+                    <option value="landing-pages">💻 Páginas Que Vendem Mais</option>
+                    <option value="consultoria">📊 Estratégia Completa de Vendas</option>
+                    <option value="seo">🔍 Aparecer no Google</option>
+                    <option value="todos">🚀 Explodir Meu Faturamento</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Mensagem (Opcional)
+                    Conte Mais Sobre Seu Negócio
                   </label>
                   <Textarea
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Conte-nos mais sobre seu projeto..."
+                    placeholder="Qual seu faturamento atual? Quantos clientes atende por mês? Quanto quer crescer?"
                     className="w-full h-24"
                   />
                 </div>
 
                 <Button 
                   type="submit"
-                  className="w-full bg-marketing-orange hover:bg-marketing-orange/90 text-white py-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-marketing-orange hover:bg-marketing-orange/90 text-white py-4 text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  Enviar Solicitação
+                  🚀 QUERO MINHA ANÁLISE GRATUITA AGORA!
                 </Button>
+                
+                <p className="text-xs text-center text-gray-500">
+                  ⚡ Resposta em até 30 minutos • 🔒 Seus dados estão 100% seguros
+                </p>
               </form>
             </CardContent>
           </Card>
 
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-marketing-green/20">
               <h3 className="text-2xl font-bold text-marketing-green mb-6">
-                Informações de Contato
+                💬 Fale Diretamente Conosco
               </h3>
               
               <div className="space-y-6">
@@ -222,23 +230,23 @@ const ContactSection = () => {
             {/* WhatsApp CTA */}
             <div className="bg-gradient-to-r from-marketing-green to-marketing-orange p-8 rounded-xl text-white">
               <h3 className="text-2xl font-bold mb-4">
-                Prefere falar por WhatsApp?
+                🔥 Quer Resultados HOJE Mesmo?
               </h3>
               <p className="mb-6 opacity-90">
-                Clique no botão abaixo e fale diretamente com um especialista agora mesmo!
+                Clique agora e fale direto com um especialista que já faturou milhões para empresas como a sua!
               </p>
               <Button 
-                className="bg-white text-marketing-green px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open('https://wa.me/+5513985994965?text=Olá! Vim através do site e gostaria de falar com um especialista.', '_blank')}
+                className="bg-white text-marketing-green px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                onClick={() => window.open('https://wa.me/+5513985994965?text=🚀 Quero começar AGORA! Preciso multiplicar minhas vendas o mais rápido possível.', '_blank')}
               >
-                Falar com Especialista
+                💬 FALAR COM ESPECIALISTA AGORA
               </Button>
             </div>
 
             {/* Social Media */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold text-marketing-green mb-4">
-                Siga-nos nas Redes Sociais
+                📱 Acompanhe Nossos Cases de Sucesso
               </h3>
               <div className="flex space-x-4">
                 {[
