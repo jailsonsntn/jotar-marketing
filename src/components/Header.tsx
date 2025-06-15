@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -26,8 +27,8 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out ${
       scrolled 
-        ? 'bg-white/70 backdrop-blur-md border-gray-200/50 shadow-lg transform translate-y-0' 
-        : 'bg-white/95 backdrop-blur-sm border-gray-100 transform translate-y-0'
+        ? 'bg-white/30 backdrop-blur-lg border-gray-200/30 shadow-xl transform translate-y-0' 
+        : 'bg-white/20 backdrop-blur-md border-gray-100/20 transform translate-y-0'
     }`}>
       <div className="container mx-auto px-4 py-4 transition-all duration-500 ease-in-out">
         <div className="flex items-center justify-between">
