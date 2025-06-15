@@ -1,9 +1,19 @@
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,8 +24,12 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-      <div className="container mx-auto px-4 py-4">
+    <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out ${
+      scrolled 
+        ? 'bg-white/70 backdrop-blur-md border-gray-200/50 shadow-lg transform translate-y-0' 
+        : 'bg-white/95 backdrop-blur-sm border-gray-100 transform translate-y-0'
+    }`}>
+      <div className="container mx-auto px-4 py-4 transition-all duration-500 ease-in-out">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
