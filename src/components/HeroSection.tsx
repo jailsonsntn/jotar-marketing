@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { useScrollZoom } from '@/hooks/useScrollZoom';
 
@@ -61,7 +60,7 @@ Chega de investir sem ver resultado.</p>
                 <div className="text-xs font-semibold text-marketing-green">Mais Vendas</div>
               </div>
               
-              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg animate-bounce" style={{
+              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg animate-bounce z-30" style={{
               animationDelay: '1s'
             }}>
                 <div className="text-2xl">💰</div>
