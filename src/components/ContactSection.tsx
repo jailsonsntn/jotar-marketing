@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -73,7 +74,7 @@ const ContactSection = () => {
   }, {
     icon: "🌎",
     title: "Localização",
-    info: "São Paulo, SP - Brasil",
+    info: "Praia Grande - SP, Brasil",
     action: "#"
   }, {
     icon: "⚡",
