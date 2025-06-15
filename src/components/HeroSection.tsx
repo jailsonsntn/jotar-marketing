@@ -18,7 +18,7 @@ const HeroSection = () => {
               <span className="text-marketing-orange"> atrair clientes</span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">Estratégias de marketing digital que realmente funcionam. 
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">Estratégias de marketing digital que realmente funcionam. 
 Chega de investir sem ver resultado.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -56,7 +56,7 @@ Chega de investir sem ver resultado.</p>
               <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" alt="Marketing Digital" className="relative z-10 w-full h-[400px] object-cover rounded-2xl shadow-2xl" />
               
               {/* Floating Cards */}
-              <div className="absolute -top-4 -left-4 bg-white p-4 rounded-lg shadow-lg animate-bounce">
+              <div className="absolute -top-4 -left-4 bg-white p-4 rounded-lg shadow-lg animate-bounce z-30">
                 <div className="text-2xl">📈</div>
                 <div className="text-xs font-semibold text-marketing-green">Mais Vendas</div>
               </div>
