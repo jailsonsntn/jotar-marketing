@@ -1,13 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { useScrollZoom } from '@/hooks/useScrollZoom';
-
 const HeroSection = () => {
-  const heroRef = useScrollZoom({ threshold: 0.1 });
-  const contentRef = useScrollZoom({ threshold: 0.2 });
-  const imageRef = useScrollZoom({ threshold: 0.3 });
-
-  return (
-    <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center" ref={heroRef}>
+  const heroRef = useScrollZoom({
+    threshold: 0.1
+  });
+  const contentRef = useScrollZoom({
+    threshold: 0.2
+  });
+  const imageRef = useScrollZoom({
+    threshold: 0.3
+  });
+  return <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center" ref={heroRef}>
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -60,12 +63,7 @@ Chega de investir sem ver resultado.</p>
                 <div className="text-xs font-semibold text-marketing-green">Mais Vendas</div>
               </div>
               
-              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg animate-bounce z-30" style={{
-              animationDelay: '1s'
-            }}>
-                <div className="text-2xl">💰</div>
-                <div className="text-xs font-semibold text-marketing-orange">Resultados Reais</div>
-              </div>
+              
 
               {/* Logo overlay */}
               <div className="absolute top-4 right-4 bg-white/90 p-3 rounded-lg shadow-lg">
@@ -75,8 +73,6 @@ Chega de investir sem ver resultado.</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
