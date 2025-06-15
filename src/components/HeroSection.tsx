@@ -1,10 +1,18 @@
+
 import { Button } from '@/components/ui/button';
+import { useScrollZoom } from '@/hooks/useScrollZoom';
+
 const HeroSection = () => {
-  return <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center">
+  const heroRef = useScrollZoom({ threshold: 0.1 });
+  const contentRef = useScrollZoom({ threshold: 0.2 });
+  const imageRef = useScrollZoom({ threshold: 0.3 });
+
+  return (
+    <section id="inicio" className="pt-20 bg-gradient-to-br from-marketing-gray via-white to-marketing-gray min-h-screen flex items-center" ref={heroRef}>
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="animate-fade-in">
+          <div ref={contentRef}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-marketing-green leading-tight mb-6">
               Transforme o seu negócio em uma máquina de
               <span className="text-marketing-orange"> atrair clientes</span>
@@ -42,7 +50,7 @@ Chega de investir sem ver resultado.</p>
           </div>
 
           {/* Hero Image */}
-          <div className="animate-slide-up">
+          <div ref={imageRef}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-marketing-orange/20 to-marketing-green/20 rounded-2xl transform rotate-3"></div>
               <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" alt="Marketing Digital" className="relative z-10 w-full h-[400px] object-cover rounded-2xl shadow-2xl" />
@@ -68,6 +76,8 @@ Chega de investir sem ver resultado.</p>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;

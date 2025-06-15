@@ -4,7 +4,14 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { toast } from '@/hooks/use-toast';
+import { useScrollZoom } from '@/hooks/useScrollZoom';
+
 const ContactSection = () => {
+  const sectionRef = useScrollZoom();
+  const titleRef = useScrollZoom({ threshold: 0.3 });
+  const formRef = useScrollZoom({ threshold: 0.2 });
+  const contactInfoRef = useScrollZoom({ threshold: 0.2 });
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +19,7 @@ const ContactSection = () => {
     interest: '',
     message: ''
   });
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const {
       name,
@@ -22,6 +30,7 @@ const ContactSection = () => {
       [name]: value
     }));
   };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -50,6 +59,7 @@ const ContactSection = () => {
       message: ''
     });
   };
+
   const contactInfo = [{
     icon: "📧",
     title: "E-mail",
@@ -71,9 +81,11 @@ const ContactSection = () => {
     info: "Segunda à Sexta, 9h às 18h",
     action: "#"
   }];
-  return <section id="contato" className="py-20 bg-marketing-gray">
+
+  return (
+    <section id="contato" className="py-20 bg-marketing-gray" ref={sectionRef}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16" ref={titleRef}>
           <h2 className="text-4xl md:text-5xl font-bold text-marketing-green mb-6">
             Vamos Conversar?
           </h2>
@@ -84,7 +96,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="animate-slide-up shadow-xl border-2 border-marketing-orange/20">
+          <Card className="shadow-xl border-2 border-marketing-orange/20" ref={formRef}>
             <CardHeader className="bg-gradient-to-r from-marketing-green to-marketing-orange text-white rounded-t-lg">
               <CardTitle className="text-2xl text-center">
                 📋 Solicite uma Proposta
@@ -151,9 +163,7 @@ const ContactSection = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8 animate-slide-up" style={{
-          animationDelay: '0.2s'
-        }}>
+          <div className="space-y-8" ref={contactInfoRef}>
             <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-marketing-green/20">
               <h3 className="text-2xl font-bold text-marketing-green mb-6">
                 📞 Entre em Contato
@@ -192,6 +202,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;
