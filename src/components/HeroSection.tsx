@@ -21,7 +21,7 @@ const HeroSection = () => {
       className="pt-20 min-h-screen flex items-center relative overflow-hidden"
       ref={heroRef}
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1551038247-3d9af20df552?w=1920&h=1080&fit=crop&crop=center')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&h=1080&fit=crop&crop=center')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
