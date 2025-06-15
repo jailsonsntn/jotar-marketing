@@ -8,7 +8,7 @@ interface UseScrollZoomOptions {
   zoomOutClass?: string;
 }
 
-export const useScrollZoom = (options: UseScrollZoomOptions = {}) => {
+export const useScrollZoom = <T extends HTMLElement = HTMLDivElement>(options: UseScrollZoomOptions = {}) => {
   const {
     threshold = 0.1,
     rootMargin = '0px 0px -100px 0px',
@@ -16,7 +16,7 @@ export const useScrollZoom = (options: UseScrollZoomOptions = {}) => {
     zoomOutClass = 'animate-zoom-out'
   } = options;
 
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<T>(null);
 
   useEffect(() => {
     const element = elementRef.current;
