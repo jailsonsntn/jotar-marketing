@@ -1,4 +1,5 @@
 
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -69,7 +70,7 @@ const ContactSection = () => {
   }, {
     icon: "💬",
     title: "WhatsApp",
-    info: "+55 (13) 9 8599-4965",
+    info: "+ 55 13 98599-4965",
     action: "https://wa.me/+5513985994965"
   }, {
     icon: "🌎",
@@ -208,3 +209,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
