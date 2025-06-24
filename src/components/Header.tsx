@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/lovable-uploads/2dcc7432-8798-4ae1-b564-16c9f42cc0d1.png" alt="Jota R Marketing" className="h-12 w-auto" />
+            <img src="/uploads/2dcc7432-8798-4ae1-b564-16c9f42cc0d1.png" alt="Jota R Marketing" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

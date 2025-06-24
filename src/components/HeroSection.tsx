@@ -84,7 +84,7 @@ const HeroSection = () => {
 
               {/* Logo overlay */}
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg">
-                <img src="/lovable-uploads/fc9645a5-0ea8-413a-aa15-5ded98d3c7ee.png" alt="Jota R Marketing" className="h-8 w-auto" />
+                <img src="/uploads/fc9645a5-0ea8-413a-aa15-5ded98d3c7ee.png" alt="Jota R Marketing" className="h-8 w-auto" />
               </div>
             </div>
           </div>
